@@ -12,18 +12,23 @@ public class Action {
     }
 
     public String toString() {
-        switch (action) {
-            case accept:
-                return "acc";
-            case shift:
-                return "s" + number;
-            case reduce:
-                return "r" + number;
-        }
         return action.toString() + number;
     }
 }
 
 enum act {
-    shift, reduce, accept
+    shift {
+        public String toString(int number) {
+            return "acc";
+        }
+    }, reduce {
+        public String toString(int number) {
+            return "r" + number;
+        }
+
+    }, accept {
+        public String toString(int number) {
+            return "s" + number;
+        }
+    }
 }
