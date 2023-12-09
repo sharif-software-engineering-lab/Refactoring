@@ -12,6 +12,9 @@
 2. یک مورد State/Strategy یا استفاده از Polymorphism به جای شرط: در کلاس Action این مورد در enum act انجام شد.
    ![4](Images/4.png)
    ![5](Images/5.png)
+3. یک مورد Separate Query From Modifier
+   در کلاس Memory این مشکل رخ داده بود که توابع مربوط به آن جدا شد.
+   ![6](Images/6.png)
 
 ## پرسش‌ها
 
