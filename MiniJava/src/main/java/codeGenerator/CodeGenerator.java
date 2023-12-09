@@ -13,7 +13,7 @@ import java.util.Stack;
  * Created by Alireza on 6/27/2015.
  */
 public class CodeGenerator {
-    private Memory memory = new Memory();
+    private Memory memory = new MemoryFacade().getSimpleMemory();
     private Stack<Address> ss = new Stack<Address>();
     private Stack<String> symbolStack = new Stack<>();
     private Stack<String> callStack = new Stack<>();
